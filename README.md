@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vinicius-f-pereira/42-project-badges/main/badges/libftm.png"/>
+</p>
+
 ## Libft
 This project is about coding a C library.
 It will contain a lot of general purpose functions your programs will rely upon.
