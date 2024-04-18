@@ -6,7 +6,7 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 14:45:52 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/01/25 16:07:59 by oouaadic         ###   ########.fr       */
+/*   Updated: 2024/01/28 13:13:55 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,5 @@ int	ft_putnbr_fd(int n, int fd)
 	if (m >= 10)
 		count += ft_putnbr_fd(m / 10, fd);
 	count += ft_putchar_fd('0' + m % 10, fd);
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:34:17 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/01/25 16:17:55 by oouaadic         ###   ########.fr       */
+/*   Updated: 2024/04/16 18:32:38 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int					ft_putendl_fd(char *s, int fd);
 int					ft_putendl(char *s);
 int					ft_putnbr_fd(int n, int fd);
 int					ft_putnbr(int n);
-int					ft_putnbr_base(int n, int base);
+int					ft_putnbr_base(long n, int base);
 int					ft_putstr_fd(char *s, int fd);
 int					ft_putstr(char *s);
 
@@ -82,6 +82,7 @@ size_t				ft_strlcpy(char *dest, char const *src, size_t n);
 size_t				ft_strlen(char const *str);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strncmp(char const *s1, char const *s2, size_t n);
+int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strnstr(char const *haystack, char const *needle,
 						size_t n);
 char				*ft_strrchr(char const *str, int c);

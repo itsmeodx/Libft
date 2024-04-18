@@ -6,21 +6,19 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 14:45:52 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/01/25 16:28:39 by oouaadic         ###   ########.fr       */
+/*   Updated: 2024/01/28 10:23:49 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_base(int n, int base)
+int	ft_putnbr_base(long m, int base)
 {
-	long	m;
 	int		count;
 	char	*key;
 
 	key = "0123456789abcdef";
 	count = 0;
-	m = (long)n;
 	if (m < 0)
 	{
 		count += ft_putchar('-');
