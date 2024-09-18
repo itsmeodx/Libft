@@ -6,7 +6,7 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:22:01 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/09/18 12:55:37 by oouaadic         ###   ########.fr       */
+/*   Updated: 2024/09/18 12:58:25 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strdup(const char *s)
 	i = -1;
 	while (s[++i])
 		dup_str[i] = s[i];
-	dup_str[i] = '\0';
+	dup_str[++i] = '\0';
 	return (dup_str);
 }
