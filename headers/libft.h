@@ -6,7 +6,7 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:34:17 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/05/12 16:50:04 by oouaadic         ###   ########.fr       */
+/*   Updated: 2024/09/18 12:07:36 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ size_t				ft_strlen(char const *str);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strncmp(char const *s1, char const *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
+int					ft_strcasecmp(const char *s1, const char *s2);
 char				*ft_strnstr(char const *haystack, char const *needle,
 						size_t n);
 char				*ft_strrchr(char const *str, int c);
