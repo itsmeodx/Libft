@@ -28,6 +28,8 @@ b_OBJ		=	$(addprefix $(OBJDIR)/, $(b_objs))
 SRC			=	$(OBJ:$(OBJDIR)%.o=$(SRCDIR)%.c)
 b_SRC		=	$(b_OBJ:$(OBJDIR)%.o=$(SRCDIR)%.c)
 
+all : $(NAME) bonus
+
 $(NAME):	$(OBJ)
 	@echo "$(GREEN)Mandatory part is done!$(END)"
 
@@ -37,8 +39,6 @@ $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	@${CCC} $< -I$(INCLUDES) -o $@ > /dev/null
 	@echo "$(YELLOW)Inserting $(notdir $@) to $(NAME)...$(END)"
 	@${AR} $(NAME) $@ > /dev/null
-
-all : $(NAME) bonus
 
 bonus : ${b_OBJ}
 	@echo "$(GREEN)Bonus part is done!$(END)"
