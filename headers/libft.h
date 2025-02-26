@@ -6,7 +6,7 @@
 /*   By: oouaadic <oouaadic@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:34:17 by oouaadic          #+#    #+#             */
-/*   Updated: 2024/09/18 12:07:36 by oouaadic         ###   ########.fr       */
+/*   Updated: 2025/02/26 22:11:20 by oouaadic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,7 @@ char				*ft_strchr(char const *str, int c);
 char				*ft_strdup(char const *src);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strsjoin(char **strs);
 size_t				ft_strlcat(char *dest, const char *src, size_t n);
 size_t				ft_strlcpy(char *dest, char const *src, size_t n);
 size_t				ft_strlen(char const *str);
