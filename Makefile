@@ -31,23 +31,23 @@ b_SRC		=	$(b_OBJ:$(OBJDIR)%.o=$(SRCDIR)%.c)
 all : $(NAME) bonus
 
 $(NAME):	$(OBJ)
-	@echo "$(GREEN)Mandatory part is done!$(END)"
+	@echo "\e[K\r$(GREEN)Mandatory part is done!$(END)"
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	@mkdir -p $(OBJDIR)
-	@echo "$(CYAN)Compiling $(notdir $<)...$(END)"
+	@echo -n "$(CYAN)Compiling $(notdir $<)...$(END)\e[K\r"
 	@${CCC} $< -I$(INCLUDES) -o $@ > /dev/null
-	@echo "$(YELLOW)Inserting $(notdir $@) to $(NAME)...$(END)"
+	@echo -n "$(YELLOW)Inserting $(notdir $@) to $(NAME)...$(END)\e[K\r"
 	@${AR} $(NAME) $@ > /dev/null
 
 bonus : ${b_OBJ}
-	@echo "$(GREEN)Bonus part is done!$(END)"
+	@echo "\e[K\r$(GREEN)Bonus part is done!$(END)"
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	@mkdir -p $(OBJDIR)
-	@echo "$(CYAN)Compiling $(notdir $<)...$(END)"
+	@echo -n "$(CYAN)Compiling $(notdir $<)...$(END)\e[K\r"
 	@${CCC} $< -I$(INCLUDES) -o $@
-	@echo "$(YELLOW)Inserting $(notdir $@) to $(NAME)...$(END)"
+	@echo -n "$(YELLOW)Inserting $(notdir $@) to $(NAME)...$(END)\e[K\r"
 	@${AR} $(NAME) $@
 
 clean :
